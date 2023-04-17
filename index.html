@@ -1,0 +1,94 @@
+<html>
+<head>
+        <title>My Web Page</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>  
+     
+</head>
+   <body>
+     <div id= 'div1'>
+      <div class="innerdiv">
+         <div class="logo">
+           <img src="./img3.png" alt="" />
+         </div>
+         <div class="image"></div>
+         <div class="text">
+           Start for free & get <br />
+           attractive offers today !
+         </div>
+       </div>
+     </div>
+
+     <div id = 'div2'>
+          <form name = "myform"  onsubmit="return validatefields()" method = "get" action = "message.html" class="f1">
+            <div class="social">
+               <div class="title">Get Started</div>
+               <div class="question">
+                 Already Have an Account? <br/><br/>
+                 <span>Sign In</span>
+               </div>
+     
+               <div class="btn">
+                 <div class="btn-1">
+                 <img src="https://img.icons8.com/color/30/000000/google-logo.png"/>
+                  Sign up
+                 </div>
+                 <div class="btn-2">
+                  <img
+                     src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"
+                      id="im1" 
+                   />
+                   Sign up
+                 </div>
+               </div>
+     
+               <div class="or">Or</div>
+             </div>
+             
+               <h3>Register</h3>
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="uname" required/><br/>
+                  <div id="username_error" class="error"></div>
+        
+                  <label for="pwd">Password</label>
+                  <input type="password" name="pwd" id="pass"/><br/>
+                  <div id="password_error" class="error"></div>
+                               
+                  <label for="pwd1">Confirm Password</label>
+                  <input type="password"  name="pwd1" id="cpass"/><br/>
+                  <!--<div id="cpassword_error" class="error"></div>-->
+
+                  <label for="dob" >Date of Birth</lable><br/>
+                  <input type="date" name="mydate" id="dob"/><br/>
+        
+                  <label for="email">Email</label><br/>
+                  <input type="email"    name="email"  id="email" /><br/>
+
+                  <label for= "number">Mobile Number:</label><br/>  
+                  <input type="number" name="mobile" id="mob"><br/>
+                                
+                  <label for="Country">Country</label><br/>
+                                <select name="Country" id="ctry">
+                                    <option value="select">Select Country</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="india">India</option>
+                                    <option value="newzealand">NewZealand</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                    <option value="uae">UAE</option>
+                                </select><br/><br/>
+                  <label for="data">Additional Comments:</label><br/>
+                  <textarea rows="3" cols="30" name="data" minlength="5" maxlength="200">  </textarea><br/><br/>
+                               
+                               
+                  <input type="submit" name="submit" value="submit">
+        
+
+          </form>
+     </div>
+     <script src="main.js"></script> 
+
+</body> 
+
+
+</html>
